@@ -1,7 +1,10 @@
-# DataStructure-circularQueueWithTag
-设置tag的循环队列
-
-<pre><code>
+//
+//  main.cpp
+//  CircularQueueWithTag
+//
+//  Created by kidd on 2018/6/21.
+//  Copyright © 2018年 Kidd. All rights reserved.
+//
 
 /**
 队空条件： Q.front == Q.rear 且 Q.tag == 0
@@ -40,4 +43,16 @@ void DeQueue(Queue &q){
     }
 }
 
-</code></pre>
+int main(int argc, const char * argv[]) {
+    
+    Queue q;
+    EnQueue(q,1);
+    EnQueue(q,2);
+    EnQueue(q,3);
+    
+    DeQueue(q);
+    DeQueue(q);
+    DeQueue(q);
+    DeQueue(q);
+    return 0;
+}
